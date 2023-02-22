@@ -8,8 +8,8 @@ class BrandsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 15.0),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.only(left: 15.0),
+      decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(10)),
         color: Color.fromRGBO(245, 246, 250, 1),
       ),
@@ -18,7 +18,7 @@ class BrandsList extends StatelessWidget {
           Container(
             width: 40,
             height: 40,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
               color: Color.fromRGBO(254, 254, 254, 1),
             ),

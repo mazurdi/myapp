@@ -14,7 +14,7 @@ class ProductsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 20, top: 20),
+      margin: const EdgeInsets.only(left: 20, top: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -30,7 +30,7 @@ class ProductsList extends StatelessWidget {
                 icon: Image.asset('assets/icons/heart.png'),
                 onPressed: () => {
                   ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Added to favourites')))
+                      const SnackBar(content: Text('Added to favourites')))
                 },
               ),
             ],

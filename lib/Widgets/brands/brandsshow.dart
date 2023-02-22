@@ -13,7 +13,7 @@ class _BrandsShowState extends State<BrandsShow> {
     return SizedBox(
       height: 50,
       child: ListView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: [
           BrandsList(title: 'Adidas', icon: Image.asset("assets/icons/adidas.png")),

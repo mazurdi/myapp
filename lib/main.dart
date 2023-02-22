@@ -23,7 +23,7 @@ class _CustomScrollingWidgetState extends State {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(slivers: <Widget>[
-        MyAppBar(),
+        const MyAppBar(),
         SliverList(
           delegate: SliverChildListDelegate([
             const Header(),
@@ -35,6 +35,26 @@ class _CustomScrollingWidgetState extends State {
           ]),
         ),
       ]),
+       bottomNavigationBar: BottomNavigationBar(
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Image.asset('assets/icons/homepage.jpg'),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('assets/icons/heartbottom.jpg'),
+              label: 'Wishlist',
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('assets/icons/bagbottom.jpg'),
+              label: 'Basket',
+            ),
+             BottomNavigationBarItem(
+              icon: Image.asset('assets/icons/walett.png'),
+              label: 'Cards',
+            ),            
+          ],
+        ),
     );
   }
 }

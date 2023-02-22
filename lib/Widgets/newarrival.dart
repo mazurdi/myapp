@@ -6,12 +6,12 @@ class NewArrival extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 15, right: 5),
+      margin: const EdgeInsets.only(left: 15, right: 5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Text(
+          const Text(
             "New Arrival",
             style: TextStyle(fontSize: 17),
           ),
@@ -19,7 +19,7 @@ class NewArrival extends StatelessWidget {
             width: 100,
             height: 30,
             child: IconButton(
-              icon: Text(
+              icon: const Text(
                 "View All",
                 style: TextStyle(
                     color: Color.fromRGBO(143, 149, 158, 1), fontSize: 13),

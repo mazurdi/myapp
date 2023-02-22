@@ -13,7 +13,7 @@ class _SearchBarState extends State<SearchBar> {
       margin: const EdgeInsets.all(15),
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             child: Center(
               child: TextField(
                 cursorColor: Color.fromRGBO(143, 149, 158, 1),
@@ -46,13 +46,13 @@ class _SearchBarState extends State<SearchBar> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(left: 12),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.only(left: 12),
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(151, 117, 250, 1),
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
             child: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.mic_none_rounded,
                 color: Colors.white,
                 size: 27,
